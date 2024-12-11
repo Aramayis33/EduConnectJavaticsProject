@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Student</title>
+  <link rel="stylesheet" href="/css/addstudentstyle.css">
+</head>
+<body>
+<div class="container">
+  <div class="title">Admin Registration<h4>for Students </h4></div>
+  <div class="content">
+    <form action="/addStudentSubmit" method="post" enctype="multipart/form-data">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Name</span>
+          <input type="text" name="stName" placeholder="Enter name" required>
+          <input type="hidden" name="stId" value="0">
+        </div>
+        <div class="input-box">
+          <span class="details">Surname</span>
+          <input type="text" name="stSurname" placeholder="Enter surname" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="email" name="stEmail" placeholder="Enter email" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Group Number</span>
+          <input type="text" name="stGroup" placeholder="Enter group number" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Fee</span>
+          <input type="number" name="stFee" placeholder="Enter the fee amount" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Birthday</span>
+          <input type="date" name="stDate" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Password</span>
+          <input type="password" id="password" name="stPassword" placeholder="Enter your password" required>
+        </div>
+      </div>
+      <div class="photo-upload">
+        <label for="photo">Upload Photo</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+      </div>
+      <div class="button">
+        <input type="submit" value="Register">
+      </div>
+    </form>
+  </div>
+</div>
+
+
+</body>
+</html>
